@@ -16,11 +16,17 @@
             --fontpadrao:'League Spartan', sans-serif;
         }
         main{
-            border: 3px solid black;
+            background-image: url("images/bg-pattern-top-desktop.svg");
+            background-repeat: no-repeat;
+            font-family: var(--fontpadrao);
+            /* border: 3px solid black; */
             margin: 0 auto;
             max-width: 1100px;
             height: 95vh;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.24);
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             align-items: flex-start;
             padding: 50px;
         }
@@ -32,15 +38,16 @@
         display: flex;
         flex-wrap: wrap;
         text-align: left;
-        border: 2px solid red;
         flex-basis: 370px;
+        
+        
             
             
         }
         section.container1 > h1{
             font-family: var(--fontpadrao);
             font-weight: 700;
-            padding-right: 36px;
+            padding-right: 40px;
                 font-size: 2.4em;
                 margin-bottom: 15px;
 
@@ -53,15 +60,79 @@ line-height: 19px;
         
         }
         section.container2{
-            border: 2px solid red;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-basis: 430px;
+            /* border: 2px solid red; */
+
+        
+            
             
         }
-
-        section.container3{
-            border: 2px solid red;
+         section.box{ 
+             text-align: center;
+             border-radius: 5px;
+             padding: 6px 10px;
+            /* background-color: green; */
+            margin: 12px 0px;
+           
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 10px;
+            align-content: space-around;
+        } 
+        section.box span > img{
+            margin-right: 2px;
 
         }
+        section.box span:nth-child(2){
+            margin-left: 20px;
+        }
 
+        .itemscenter{
+        align-self: center;
+        }
+        .itemsend{
+            align-self: flex-end;
+        }
+        
+            section.container3{
+            /* border: 2px solid red; */
+            margin-top: 45px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 270px;
+            
+        }
+        div.box3{
+            background-color: blueviolet;
+            flex-basis: 300px;
+            padding: 25px;
+            text-align: left;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            
+            }
+            div.user{
+                display: flex;
+                
+            }
+        div.user > img{
+            width: 50px;
+            border-radius: 50%;
+        }
+        div.user div{
+            padding: 10px 0px 0px 15px;
+        }
+        div.box3 > p{
+            margin-top: 25px;
+            line-height: 20px;
+        }
+        
         
     </style>
 </head>
@@ -72,8 +143,100 @@ line-height: 19px;
             <h1>10,000+ of our users love our products.</h1>
             <p>We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services. </p>
         </section>
-        <section class="container2"></section>
-        <section class="container3"></section>
+        <section class="container2">
+           
+                <section class="box" >
+
+                    <span>
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                    </span>
+                    <span>Lorem ipsum dolor, si Suscipit!</span>
+                </section>
+                    <section class="box itemscenter">
+
+                        <span>
+                            <img src="images/icon-star.svg" alt="Icone estrela">
+                            <img src="images/icon-star.svg" alt="Icone estrela">
+                            <img src="images/icon-star.svg" alt="Icone estrela">
+                            <img src="images/icon-star.svg" alt="Icone estrela">
+                            <img src="images/icon-star.svg" alt="Icone estrela">
+                        </span>
+                        
+                        
+                        <span>Lorem ipsum dolor, si Suscipit!</span>
+                        </section>
+                        <section class="box itemsend">
+
+                    <span>
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                        <img src="images/icon-star.svg" alt="Icone estrela">
+                    </span>
+                    
+                    
+                    <span>Lorem ipsum dolor, si Suscipit!</span>
+                </section>
+        
+        </section>
+        <section class="container3">
+
+            <div class="box3">
+                <div class="user">
+
+                    <img src="images/image-colton.jpg" alt="Foto de Colton">
+                    
+                    <div>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+
+                </div>
+
+
+            <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+            
+            </div>
+            <div class="box3 itemscenter">
+                <div class="user ">
+
+                    <img src="images/image-colton.jpg" alt="Foto de Colton">
+                    
+                    <div>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+
+                </div>
+
+
+            <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+            
+            </div>
+            <div class="box3 itemsend">
+                <div class="user">
+
+                    <img src="images/image-colton.jpg" alt="Foto de Colton">
+                    
+                    <div>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+
+                </div>
+
+
+            <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+            
+            </div>
+            
+            
+        </section>
 
     </main>
 
