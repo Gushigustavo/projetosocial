@@ -14,6 +14,11 @@
         }
         :root{
             --fontpadrao:'League Spartan', sans-serif;
+            --color0:hsl(300, 43%, 22%);
+            --color1:hsl(333, 80%, 67%);
+            --color2:hsl(303, 10%, 53%);
+            --color3:hsl(300, 24%, 96%);
+            --color4:hsl(0, 0%, 100%);
         }
         main{
             background-image: url("images/bg-pattern-top-desktop.svg");
@@ -46,6 +51,7 @@
         }
         section.container1 > h1{
             font-family: var(--fontpadrao);
+            color: var(--color0);
             font-weight: 700;
             padding-right: 40px;
                 font-size: 2.4em;
@@ -54,6 +60,7 @@
         }
         section.container1 > p{
 font-family: var(--fontpadrao);
+color: var(--color2);
 font-weight: 400;
 line-height: 19px;
         
@@ -72,10 +79,11 @@ line-height: 19px;
             
         }
          section.box{ 
+             
              text-align: center;
              border-radius: 5px;
-             padding: 6px 10px;
-            /* background-color: green; */
+             padding: 10px;
+            background-color:var(--color3);
             margin: 12px 0px;
            
             display: flex;
@@ -88,6 +96,8 @@ line-height: 19px;
 
         }
         section.box span:nth-child(2){
+            color: var(--color0);
+            font-weight: 700;
             margin-left: 20px;
         }
 
@@ -99,7 +109,7 @@ line-height: 19px;
         }
         
             section.container3{
-            /* border: 2px solid red; */
+    
             margin-top: 45px;
             display: flex;
             flex-wrap: wrap;
@@ -109,7 +119,7 @@ line-height: 19px;
             
         }
         div.box3{
-            background-color: blueviolet;
+            background-color:var(--color0);
             flex-basis: 300px;
             padding: 25px;
             text-align: left;
@@ -127,10 +137,22 @@ line-height: 19px;
         }
         div.user div{
             padding: 10px 0px 0px 15px;
+            line-height: 18px;
         }
+        div.user div p:nth-child(1){
+            color: var(--color4);
+            font-weight: 500;
+        }
+        div.user div p:nth-child(2){
+            color: var(--color1);
+           
+        }
+        
         div.box3 > p{
+            color: var(--color4);
             margin-top: 25px;
             line-height: 20px;
+            font-weight: normal;
         }
         
         
@@ -154,7 +176,7 @@ line-height: 19px;
                         <img src="images/icon-star.svg" alt="Icone estrela">
                         <img src="images/icon-star.svg" alt="Icone estrela">
                     </span>
-                    <span>Lorem ipsum dolor, si Suscipit!</span>
+                    <span>Rated 5 Stars in Reviews</span>
                 </section>
                     <section class="box itemscenter">
 
@@ -167,7 +189,7 @@ line-height: 19px;
                         </span>
                         
                         
-                        <span>Lorem ipsum dolor, si Suscipit!</span>
+                        <span>Rated 5 Stars in Reviews</span>
                         </section>
                         <section class="box itemsend">
 
@@ -180,7 +202,7 @@ line-height: 19px;
                     </span>
                     
                     
-                    <span>Lorem ipsum dolor, si Suscipit!</span>
+                    <span>Rated 5 Stars in BestTech</span>
                 </section>
         
         </section>
@@ -192,8 +214,8 @@ line-height: 19px;
                     <img src="images/image-colton.jpg" alt="Foto de Colton">
                     
                     <div>
-                        <p>Lorem, ipsum.</p>
-                        <p>Lorem, ipsum.</p>
+                        <p>Colton Smith</p>
+                        <p>Verified Buyer</p>
                     </div>
 
                 </div>
@@ -205,33 +227,33 @@ line-height: 19px;
             <div class="box3 itemscenter">
                 <div class="user ">
 
-                    <img src="images/image-colton.jpg" alt="Foto de Colton">
+                    <img src="images/image-irene.jpg" alt="Foto de Colton">
                     
                     <div>
-                        <p>Lorem, ipsum.</p>
-                        <p>Lorem, ipsum.</p>
+                        <p>Irene Roberts</p>
+                        <p>Verified Buyer</p>
                     </div>
 
                 </div>
 
 
-            <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+            <p> "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
             
             </div>
             <div class="box3 itemsend">
                 <div class="user">
 
-                    <img src="images/image-colton.jpg" alt="Foto de Colton">
+                    <img src="images/image-anne.jpg" alt="Foto de Colton">
                     
                     <div>
-                        <p>Lorem, ipsum.</p>
-                        <p>Lorem, ipsum.</p>
+                        <p>Anne Wallace</p>
+                        <p>Verified Buyer</p>
                     </div>
 
                 </div>
 
 
-            <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+            <p>"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!" </p>
             
             </div>
             
