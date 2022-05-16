@@ -58,7 +58,7 @@
            margin-bottom: 15px;
         }
 
-        section.container2{
+        div.container2{
             padding-top: 10px;
             display: flex;
             flex-direction: column;
@@ -102,7 +102,7 @@
             align-self: flex-end;
         }
 
-        section.container3{
+        div.container3{
             margin-top: 45px;
             display: flex;
             flex-wrap: wrap;
@@ -167,7 +167,7 @@
 
         @media (max-width:370px) {
 
-            section.container1{
+            div.container1{
                 display: flex;
                 flex-wrap: wrap;
                 flex-basis: 370px;
@@ -176,7 +176,7 @@
             
             }
     
-            section.container1 > h1{
+            div.container1 > h1{
                 font-family: var(--fontpadrao);
                 color: var(--color0);
                 font-weight: 700;
